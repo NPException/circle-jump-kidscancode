@@ -8,15 +8,26 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "Circle",
+"language": "GDScript",
+"path": "res://objects/Circle.gd"
+}, {
+"base": "Area2D",
+"class": "Jumper",
+"language": "GDScript",
+"path": "res://objects/Jumper.gd"
+} ]
 _global_script_class_icons={
-
+"Circle": "",
+"Jumper": ""
 }
 
 [application]
 
 config/name="Circle Jump"
-run/main_scene="res://objects/Main.tscn"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
 [display]
