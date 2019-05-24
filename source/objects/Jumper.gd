@@ -2,6 +2,7 @@ extends Area2D
 class_name Jumper
 
 signal captured
+signal died
 
 onready var trail := $Trail/Points
 
@@ -9,6 +10,7 @@ var velocity := Vector2(100, 0)
 var jump_speed := 1000
 var target : Circle = null
 var trail_length := 25
+
 
 func _unhandled_input(event):
 	if target and event is InputEventScreenTouch and event.pressed:
@@ -39,4 +41,5 @@ func die():
 
 func _on_VisibilityNotifier2D_screen_exited():
 	if !target:
+		emit_signal("died")
 		die()

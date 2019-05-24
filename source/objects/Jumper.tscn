@@ -28,9 +28,7 @@ polygon = PoolVector2Array( 21.9399, 0.431976, -20.3614, 21.2242, -20.7199, -21.
 
 [node name="Points" type="Line2D" parent="Trail"]
 z_index = -1
-points = PoolVector2Array( 222.617, 103.525 )
 gradient = SubResource( 2 )
-texture_mode = 1052819649
 joint_mode = 2
 begin_cap_mode = 2
 end_cap_mode = 2
