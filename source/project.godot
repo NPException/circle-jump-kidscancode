@@ -35,6 +35,10 @@ _global_script_class_icons={
 config/name="Circle Jump"
 run/main_scene="res://Main.tscn"
 
+[autoload]
+
+settings="*res://settings.gd"
+
 [display]
 
 window/size/width=480
